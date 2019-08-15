@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MealCal</string>
+
+    // Main Activity
+    <string name="meal_rate_text">Meal Rate :</string>
+    <string name="total_cost_text">Total Cost :</string>
+    <string name="fine_range_text">Fine Range :</string>
+    <string name="fine_rate_text">Fine Rate :</string>
+    <string name="guest_meal_text">Extra Charge For Guest Meal</string>
+
+    // Main Activity 2
+
+    <string name="mealRateText">Meal Rate : %s</string>
+    <string name="totalCostText">Total Cost : %s</string>
+    <string name="fineRangeText">Fine Range : %s</string>
+    <string name="fineRateText">Fine Rate : %s</string>
+
+    <string name="total_spend">Total Spend        :  %s TK.</string>
+    <string name="remaining_balance">Remaining Balance  :  %s TK.</string>
+    <string name="fine_balance">Fine               :  %s TK.</string>
+    <string name="due_balance">Total Due          :  %s TK.</string>
+
+</resources>

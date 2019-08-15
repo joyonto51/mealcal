@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="string_text_size">16sp</dimen>
+    <dimen name="text_view_height">25dp</dimen>
+    <dimen name="text_view_width">80pt</dimen>
+
+    <dimen name="input_text_width">70pt</dimen>
+    <dimen name="input_text_height">30dp</dimen>
+    <dimen name="input_width">109dp</dimen>
+    <dimen name="input_height">40dp</dimen>
+
+    <dimen name="input_area">60pt</dimen>
+    <dimen name="input_area_height">35dp</dimen>
+
+    <dimen name="input_text_size">18sp</dimen>
+    <dimen name="output_text_size">17sp</dimen>
+</resources>
