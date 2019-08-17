@@ -14,4 +14,6 @@
 
     <dimen name="input_text_size">18sp</dimen>
     <dimen name="output_text_size">17sp</dimen>
+    <dimen name="output_text_width">90pt</dimen>
+    <dimen name="output_width">60pt</dimen>
 </resources>

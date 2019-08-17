@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="mealRate">#B60DC8D2</color>
     <color name="fineColor">#FAF60707</color>
+    <color name="output_text_color">#0488F1</color>
 </resources>

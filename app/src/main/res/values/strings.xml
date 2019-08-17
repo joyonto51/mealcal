@@ -3,15 +3,15 @@
 
     // Main Activity
     <string name="meal_rate_text">Meal Rate :</string>
-    <string name="total_cost_text">Total Cost :</string>
+    <string name="extra_cost_text">Extra Cost :</string>
     <string name="fine_range_text">Fine Range :</string>
     <string name="fine_rate_text">Fine Rate :</string>
-    <string name="guest_meal_text">Extra Charge For Guest Meal</string>
+    <string name="guest_meal_text">Charge For Guest Meal</string>
 
     // Main Activity 2
 
     <string name="mealRateText">Meal Rate : %s</string>
-    <string name="totalCostText">Total Cost : %s</string>
+    <string name="extraCostText">Total Cost : %s</string>
     <string name="fineRangeText">Fine Range : %s</string>
     <string name="fineRateText">Fine Rate : %s</string>
 
