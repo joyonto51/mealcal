@@ -52,39 +52,46 @@ class Main2Activity : AppCompatActivity() {
         }
 
         calculate.setOnClickListener {
-            var guestMeal = 0
+            calculate(countGuestMeal)
+        }
 
-            try {
-                val totalBalance = totalBalance.text.toString().toInt()
-                val totalMeal = totalMeal.text.toString().toInt()
-
-                if (countGuestMeal){
-                    if(guestMealTk.text.isNotEmpty()){
-                        guestMeal = guestMealTk.text.toString().toInt()
-                        calculate(totalBalance, totalMeal, guestMeal)
-                    }
-                    else {
-                        makeOutputUnVisible()
-                        makeFineOutputUnVisivble()
-                        toast("Please, give guest meal charge")
-                    }
-                }
-                else{
-                    calculate(totalBalance, totalMeal, guestMeal)
-                }
-
-            }
-           catch (e:NumberFormatException){
-               makeOutputUnVisible()
-               makeFineOutputUnVisivble()
-               toast("Please, give total balance & meal")
-           }
-
+        clearBtn.setOnClickListener {
+            clearInput()
         }
 
     }
 
-    fun calculate(totalBalance:Int, totalMeal: Int, guestMeal: Int){
+    fun calculate(countGuestMeal: Boolean){
+        var guestMeal = 0
+
+        try {
+            val totalBalance = totalBalance.text.toString().toInt()
+            val totalMeal = totalMeal.text.toString().toInt()
+
+            if (countGuestMeal){
+                if(guestMealTk.text.isNotEmpty()){
+                    guestMeal = guestMealTk.text.toString().toInt()
+                    calculation(totalBalance, totalMeal, guestMeal)
+                }
+                else {
+                    makeOutputUnVisible()
+                    makeFineOutputUnVisivble()
+                    toast("Please, give guest meal charge")
+                }
+            }
+            else{
+                calculation(totalBalance, totalMeal, guestMeal)
+            }
+
+        }
+        catch (e:NumberFormatException){
+            makeOutputUnVisible()
+            makeFineOutputUnVisivble()
+            toast("Please, give total balance & meal")
+        }
+    }
+
+    fun calculation(totalBalance:Int, totalMeal: Int, guestMeal: Int){
         var fine = 0F
 
         // ============================ Calculation ============================ \\
@@ -148,5 +155,11 @@ class Main2Activity : AppCompatActivity() {
         dueBalanceText.visibility = View.INVISIBLE
         fineBalance.visibility = View.INVISIBLE
         dueBalance.visibility = View.INVISIBLE
+    }
+
+    fun clearInput(){
+        totalBalance.text.clear()
+        totalMeal.text.clear()
+        guestMealTk.text.clear()
     }
 }
