@@ -11,7 +11,7 @@
     // Main Activity 2
 
     <string name="mealRateText">Meal Rate : %s</string>
-    <string name="extraCostText">Total Cost : %s</string>
+    <string name="extraCostText">Extra Cost : %s</string>
     <string name="fineRangeText">Fine Range : %s</string>
     <string name="fineRateText">Fine Rate : %s</string>
 
